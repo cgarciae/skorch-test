@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "skorch-test"
+version = "0.1.0"
+description = ""
+authors = ["Cristian Garcia <cgarcia.e88@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+torch = "^1.4.0"
+torchvision = "^0.5.0"
+pandas = "^1.0.1"
+numpy = "^1.18.1"
+dataget = {path = "../dataget"}
+typer = "^0.0.8"
+skorch = "^0.7.0"
+plotly = "^4.5.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^19.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
